@@ -1,5 +1,7 @@
 // let API_KEY = 'b971c2f0de8767f08d2bb84160ba24b7'
 
+localStorage.getItem('token') ? localStorage.getItem('token') : renderTop();
+
 let API_KEY = 'dcea1fd7b3e65d34387ad6de7ef9cc5e'
 
 let tokenTop = `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&page=1` 
@@ -193,5 +195,3 @@ buttons.forEach(button => {
         }
     });
 });
-
-localStorage.getItem('tokenTop') ? renderTop(localStorage.getItem('tokenTop')) : renderTop();
