@@ -180,15 +180,15 @@ buttons.forEach(button => {
     button.addEventListener('click', () => {
         if(button.value === 'top_rated'){
             appendDiv.innerHTML = '';
-            localStorage.setItem('tokenTop', tokenTop);
+            localStorage.setItem('token', tokenTop);
             renderTop();
         } else if(button.value === 'popular'){
             appendDiv.innerHTML = '';
-            localStorage.setItem('tokenPopular', tokenPopular);
+            localStorage.setItem('token', tokenPopular);
             renderPopular();
         } else if (button.value === 'upcoming'){
             appendDiv.innerHTML = '';
-            localStorage.setItem('tokenUpcoming', tokenUpComing);
+            localStorage.setItem('token', tokenUpComing);
             renderUpcoming();
         }
     });
